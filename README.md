@@ -1,16 +1,7 @@
-# pollaris_app
+# Pollaris App
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Demo
+![IMG_0051](https://user-images.githubusercontent.com/37973204/117317223-49358780-aec4-11eb-9269-318adb81967a.PNG)
+![IMG_0052](https://user-images.githubusercontent.com/37973204/117317244-4e92d200-aec4-11eb-9f12-622f6eeebace.PNG)
+![IMG_0053](https://user-images.githubusercontent.com/37973204/117317253-50f52c00-aec4-11eb-880c-41fa4131262a.PNG)
+![IMG_0054](https://user-images.githubusercontent.com/37973204/117317262-52265900-aec4-11eb-9f7f-10881944a92c.PNG)
