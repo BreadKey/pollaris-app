@@ -14,6 +14,18 @@ class PollCard extends StatefulWidget {
 }
 
 class _PollCardState extends State<PollCard> {
+  late bool isLong;
+
+  @override
+  void initState() {
+    super.initState();
+
+    isLong = widget.poll.options
+            .map((option) => option.body.length)
+            .reduce((value, element) => value + element) >
+        20;
+  }
+
   @override
   Widget build(BuildContext context) => Card(
           child: Padding(
@@ -35,12 +47,18 @@ class _PollCardState extends State<PollCard> {
               )
             ]),
             const Divider(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: widget.poll.options
-                  .map((option) => _OptionButton(option: option))
-                  .toList(),
-            )
+            Align(
+                alignment: Alignment.bottomRight,
+                child: Flex(
+                  direction: isLong ? Axis.vertical : Axis.horizontal,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: widget.poll.options
+                      .map(
+                        (option) => _OptionButton(option: option),
+                      )
+                      .toList(),
+                ))
           ],
         ),
       ));
